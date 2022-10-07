@@ -1,4 +1,8 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Audiowide", sans-serif;
+}
+
+.hide {
+  display: none;
 }

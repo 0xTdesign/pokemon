@@ -1,14 +1,10 @@
 import React from "react";
-import "./Main.css";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
-export default function Main({ pokemon, getPokemon, handleChange }) {
+export default function Home({ pokemon, getPokemon, handleChange }) {
   return (
-    <main className="main">
-      <section className="header">
-        <nav>
-          <h3>{pokemon.name}</h3>
-        </nav>
-      </section>
+    <>
       <div className="pokemon">
         <div className="pokemon-container">
           <form onSubmit={getPokemon}>
@@ -49,6 +45,6 @@ export default function Main({ pokemon, getPokemon, handleChange }) {
           </div>
         </footer>
       </div>
-    </main>
+    </>
   );
 }

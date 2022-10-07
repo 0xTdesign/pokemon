@@ -1,4 +1,4 @@
-main {
+.main {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
@@ -15,6 +15,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+nav a {
+  position: relative;
+  top: 10px;
+  margin-left: 15px;
 }
 
 .img-container {
@@ -62,11 +68,11 @@ form {
 
 form button {
   margin-top: 10px;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   font-weight: 900;
   font-size: 26px;
   color: #333333;
-  background: linear-gradient(180deg, #d62828 49%, #ffffff 0%);
+  background: linear-gradient(180deg, #ff4840 49%, #ffffff 0%);
   padding: 12px 19px;
   border: solid #333 1px;
   box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px,
@@ -76,6 +82,7 @@ form button {
   transform: translateY(0);
   align-items: center;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 form button:after {
@@ -111,7 +118,7 @@ form button:active {
   margin-left: 1rem;
   margin-right: 1rem;
   color: #fff;
-  text-align: center;
+  text-align: left;
   border: 2px solid #fff;
   font-weight: 400;
   font-size: 1.3rem;
@@ -119,11 +126,14 @@ form button:active {
 }
 
 .ability-container h4 {
+  font-size: 0.9rem;
+  margin-left: 10px;
   text-decoration: 3px underline;
 }
 
 p {
-  font-size: 1rem;
+  margin-left: 10px;
+  font-size: 0.7rem;
 }
 
 footer {
@@ -142,6 +152,10 @@ footer {
 
 span {
   padding-left: 10px;
+}
+
+.battle {
+  background-color: #2596be;
 }
 
 @media only screen and (min-width: 400px) {
