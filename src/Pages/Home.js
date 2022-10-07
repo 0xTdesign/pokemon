@@ -7,6 +7,7 @@ export default function Home({ pokemon, getPokemon, handleChange }) {
     <>
       <div className="pokemon">
         <div className="pokemon-container">
+          <h1>Explorer the world of Pokemon</h1>
           <form onSubmit={getPokemon}>
             <input onChange={handleChange} name="name" placeholder="Name of Pokemon" type="text" />
             <button type="submit">◉</button>
