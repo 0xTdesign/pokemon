@@ -1,0 +1,166 @@
+main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+nav {
+  color: #fff;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 25%;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-container {
+  width: 70%;
+  position: fixed;
+  bottom: 2%;
+  left: 30%;
+}
+img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 7rem;
+  margin-left: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.pokemon {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #eecb1f;
+  min-height: 100vh;
+}
+
+.header {
+  min-height: 100vh;
+  background-color: #e9e2bd;
+}
+
+form input {
+  margin-top: 15px;
+  padding: 2px;
+  font-size: 1.2rem;
+  background-color: #eecb1f;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+form button {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 26px;
+  color: #333333;
+  background: linear-gradient(180deg, #d62828 49%, #ffffff 0%);
+  padding: 23px 28px;
+  border: solid #fff 2px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px,
+    rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+  border-radius: 50px;
+  transition: 0ms;
+  transform: translateY(0);
+  align-items: center;
+  cursor: pointer;
+}
+
+form button:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+form button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+form button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+form button:active {
+  top: 1px;
+}
+
+.ability-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70%;
+}
+
+span {
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+  .img-container {
+    width: 35%;
+  }
+
+  .ability-container {
+    max-width: 300px;
+  }
+
+  .img-container {
+    width: 70%;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
