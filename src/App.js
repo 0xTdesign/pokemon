@@ -21,7 +21,7 @@ function App() {
   const getPokemon = async (e) => {
     e.preventDefault();
     // const API = `http://localhost:8080/pokemon/${form.name.toLowerCase()}`;
-    const API = `https://pokeapi.co/api/v2/pokemon/${form.name}`;
+    const API = `https://pokeapi.co/api/v2/pokemon/${form.name.toLowerCase()}`;
     const res = await axios.get(API);
     setpokemon(res.data);
     console.log(res.data);
