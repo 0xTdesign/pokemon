@@ -6,8 +6,8 @@ export default function Header({ pokemon }) {
     <section className="header">
       <nav>
         <h3>{pokemon.name}</h3>
-        <Link to="/"></Link>
-        <Link to="/battle"></Link>
+        <Link to="/">Home</Link>
+        <Link to="/battle">Battle</Link>
         <Link to="/second"></Link>
       </nav>
     </section>

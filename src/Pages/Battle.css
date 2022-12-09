@@ -1,0 +1,108 @@
+.battle {
+  margin: 0.9rem 1rem;
+}
+section {
+  background-color: #eb4c33;
+}
+
+h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.flex-container {
+  color: #fff;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-items {
+  margin: 10px;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.flex-items {
+  margin: 10px;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.container-top {
+  border-bottom: 2px solid #fff;
+}
+
+.fighter {
+  display: contents;
+  text-align: center;
+  position: fixed;
+}
+
+.fighter form input {
+  text-transform: capitalize;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 1.2rem;
+  background-color: #eb4c33;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.fighter form input::placeholder {
+  color: white;
+}
+
+.form {
+  text-align: center;
+}
+
+.battle-stats {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.battle-stats p {
+  font-size: 0.8rem;
+}
+
+.fight button {
+  /* margin-top: 20px; */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 1rem;
+  background-color: #2a75bb;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .flex-container {
+    flex-wrap: nowrap;
+    height: 450px;
+  }
+  .fighter form {
+    position: relative;
+  }
+}

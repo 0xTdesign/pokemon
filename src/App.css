@@ -6,3 +6,11 @@ body {
 .hide {
   display: none;
 }
+
+button {
+  font-family: "Audiowide", sans-serif;
+}
+
+form input::placeholder {
+  font-family: "Audiowide", sans-serif;
+}

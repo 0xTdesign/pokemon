@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home({ pokemon, getPokemon, handleChange }) {
@@ -7,11 +6,13 @@ export default function Home({ pokemon, getPokemon, handleChange }) {
     <>
       <div className="pokemon">
         <div className="pokemon-container">
-          <h1>Explorer the world of Pokemon</h1>
-          <form onSubmit={getPokemon}>
-            <input onChange={handleChange} name="name" placeholder="Name of Pokemon" type="text" />
-            <button type="submit">◉</button>
-          </form>
+          <h1>Explore the world of Pokemon</h1>
+          <div className="pokemon-f">
+            <form onSubmit={getPokemon}>
+              <input onChange={handleChange} name="name" placeholder="Name of Pokemon" type="text" />
+              <button type="submit">Explore </button>
+            </form>
+          </div>
           <div className={pokemon.abilities ? "" : "hide"}>
             <div className="ability-container">
               <h4>Abilities</h4>
@@ -34,7 +35,8 @@ export default function Home({ pokemon, getPokemon, handleChange }) {
           </div>
           <div className="img-container">
             <img
-              src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
+              src={pokemon.sprites?.other?.dream_world.front_default}
+              // src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
               alt={pokemon.name}
             />
           </div>
